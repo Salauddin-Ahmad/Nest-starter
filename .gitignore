@@ -62,3 +62,5 @@ docker-compose.override.yml
 
 # MARK: Prisma (if you later add it)
 prisma/migrations/
+
+/generated/prisma
