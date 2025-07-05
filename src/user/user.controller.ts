@@ -7,7 +7,7 @@ import { Prisma } from 'generated/prisma';
 export class UserController {
   constructor(private readonly usersService: UsersService) {}
 
-  @Post()
+  @Post('signup')
   createUser(@Body() data: Prisma.UserCreateInput) {
     return this.usersService.createUser(data);
   }
