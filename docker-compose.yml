@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   postgres:
     image: postgres:15
@@ -25,7 +23,6 @@ services:
       - pgadmin_data:/var/lib/pgadmin
     depends_on:
       - postgres
-
 volumes:
   pgdata:
   pgadmin_data:
